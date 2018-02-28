@@ -90,7 +90,6 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "HFKit", "HFKit/**/*.{swift}"
-  swift_version = '4.0'
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -132,5 +131,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+  s.swift_version = '4.0'
 
 end
