@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HFKit"
-  s.version      = "0.0.1"
+  s.version      = "0.1"
   s.summary      = "Hidden Founders Kit"
 
   # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "Hidden Founders Kit"
+  s.description  = "Internal Hidden Founders Library for iOS"
 
   s.homepage     = "https://github.com/salimbraksa/HFKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/salimbraksa/HFKit.git", :commit => "da43e19a9f35257ae17e5adabda0bb0325fbcdaa" }
+  s.source       = { :git => "https://github.com/salimbraksa/HFKit.git", :tag => 'v0.1' }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
