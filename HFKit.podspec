@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Salim Braksa" => "email@address.com" }
+  s.author             = { "Salim Braksa" => "salim@hiddenfounders.com" }
   # Or just: s.author    = "Salim Braksa"
   # s.authors            = { "Salim Braksa" => "email@address.com" }
   # s.social_media_url   = "http://twitter.com/Salim Braksa"
@@ -89,7 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "HFKit"
+  s.source_files  = "HFKit", "HFKit/**/*.{swift}"
+  swift_version = '4.0'
 
   # s.public_header_files = "Classes/**/*.h"
 
