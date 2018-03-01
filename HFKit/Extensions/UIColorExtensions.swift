@@ -31,7 +31,7 @@ public extension UIColor {
      The six-digit hexadecimal representation of color of the form #RRGGBB.
      
      - parameter hex6: Six-digit hexadecimal value.
-     */
+    */
     public convenience init(hex: UInt32, alpha: CGFloat = 1) {
         let divisor = CGFloat(255)
         let red     = CGFloat((hex & 0xFF0000) >> 16) / divisor
