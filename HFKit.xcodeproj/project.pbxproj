@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76AA88C82048796F004C51F8 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA88C72048796F004C51F8 /* EmailValidator.swift */; };
 		F456B1D02042DA3D00086468 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1CF2042DA3D00086468 /* UIColorExtensions.swift */; };
 		F456B1D22042DBA600086468 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1D12042DBA600086468 /* UIButtonExtensions.swift */; };
 		F4F0A88D2040D0C300C52DBC /* HFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F0A88B2040D0C300C52DBC /* HFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76AA88C72048796F004C51F8 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		F456B1CF2042DA3D00086468 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		F456B1D12042DBA600086468 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		F4F0A8882040D0C300C52DBC /* HFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 			children = (
 				F4F0A8A820423E6200C52DBC /* Validatable.swift */,
 				F4F0A8AA20423EE700C52DBC /* Validator.swift */,
+				76AA88C72048796F004C51F8 /* EmailValidator.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F0A8972040D10800C52DBC /* KeyboardHideManager.swift in Sources */,
+				76AA88C82048796F004C51F8 /* EmailValidator.swift in Sources */,
 				F4F0A8AB20423EE700C52DBC /* Validator.swift in Sources */,
 				F4F0A8B0204247F800C52DBC /* Presenting.swift in Sources */,
 				F456B1D22042DBA600086468 /* UIButtonExtensions.swift in Sources */,
