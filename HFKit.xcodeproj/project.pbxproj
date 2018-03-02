@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		76AA88C82048796F004C51F8 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA88C72048796F004C51F8 /* EmailValidator.swift */; };
+		76D6F03D2049BEA00004291F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D6F03C2049BEA00004291F /* UIViewControllerExtension.swift */; };
+		76D6F0402049BF050004291F /* ErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D6F03F2049BF050004291F /* ErrorViewModel.swift */; };
 		F456B1D02042DA3D00086468 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1CF2042DA3D00086468 /* UIColorExtensions.swift */; };
 		F456B1D22042DBA600086468 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1D12042DBA600086468 /* UIButtonExtensions.swift */; };
 		F4F0A88D2040D0C300C52DBC /* HFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F0A88B2040D0C300C52DBC /* HFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		76AA88C72048796F004C51F8 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		76D6F03C2049BEA00004291F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		76D6F03F2049BF050004291F /* ErrorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
 		F456B1CF2042DA3D00086468 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		F456B1D12042DBA600086468 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		F4F0A8882040D0C300C52DBC /* HFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76D6F03E2049BEE80004291F /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				76D6F03C2049BEA00004291F /* UIViewControllerExtension.swift */,
+				76D6F03F2049BF050004291F /* ErrorViewModel.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		F4F0A87E2040D0C300C52DBC = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +73,7 @@
 		F4F0A88A2040D0C300C52DBC /* HFKit */ = {
 			isa = PBXGroup;
 			children = (
+				76D6F03E2049BEE80004291F /* Errors */,
 				F4F0A8AE204247E200C52DBC /* Architecture */,
 				F4F0A8A520423D4600C52DBC /* Validation */,
 				F4F0A8942040D0D200C52DBC /* Extensions */,
@@ -192,10 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D6F0402049BF050004291F /* ErrorViewModel.swift in Sources */,
 				F4F0A8972040D10800C52DBC /* KeyboardHideManager.swift in Sources */,
 				76AA88C82048796F004C51F8 /* EmailValidator.swift in Sources */,
 				F4F0A8AB20423EE700C52DBC /* Validator.swift in Sources */,
 				F4F0A8B0204247F800C52DBC /* Presenting.swift in Sources */,
+				76D6F03D2049BEA00004291F /* UIViewControllerExtension.swift in Sources */,
 				F456B1D22042DBA600086468 /* UIButtonExtensions.swift in Sources */,
 				F4F0A8A920423E6200C52DBC /* Validatable.swift in Sources */,
 				F456B1D02042DA3D00086468 /* UIColorExtensions.swift in Sources */,
