@@ -40,7 +40,7 @@ open class ErrorViewModel {
             description = error.localizedDescription
         }
         
-        self.description = description ??  "The application has encountered an unknown error."
+        self.description = description ?? "The application has encountered an unknown error."
         self.title = title ?? "Oops!"
         
     }

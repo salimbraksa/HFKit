@@ -10,9 +10,15 @@ import UIKit
 
 public extension UIViewController {
     
+    // MARK: - Displaying Errors
+    
     public func show(error: NSError) {
         let alertController = UIAlertController(error: error)
         present(alertController, animated: true, completion: nil)
+    }
+    
+    public func show(error: Error) {
+        show(error: error as NSError)
     }
     
 }
