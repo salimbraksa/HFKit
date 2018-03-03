@@ -10,9 +10,9 @@
 		76AA88C82048796F004C51F8 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA88C72048796F004C51F8 /* EmailValidator.swift */; };
 		76D6F03D2049BEA00004291F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D6F03C2049BEA00004291F /* UIViewControllerExtension.swift */; };
 		76D6F0402049BF050004291F /* ErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D6F03F2049BF050004291F /* ErrorViewModel.swift */; };
-		F456B1D02042DA3D00086468 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1CF2042DA3D00086468 /* UIColorExtensions.swift */; };
-		F456B1D22042DBA600086468 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1D12042DBA600086468 /* UIButtonExtensions.swift */; };
-		F4851799204B2B5000811FCE /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4851798204B2B5000811FCE /* UIAlertControllerExtensions.swift */; };
+		F456B1D02042DA3D00086468 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1CF2042DA3D00086468 /* UIColorExtension.swift */; };
+		F456B1D22042DBA600086468 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1D12042DBA600086468 /* UIButtonExtension.swift */; };
+		F4851799204B2B5000811FCE /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4851798204B2B5000811FCE /* UIAlertControllerExtension.swift */; };
 		F4F0A88D2040D0C300C52DBC /* HFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F0A88B2040D0C300C52DBC /* HFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4F0A8972040D10800C52DBC /* KeyboardHideManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F0A8962040D10800C52DBC /* KeyboardHideManager.swift */; };
 		F4F0A8A920423E6200C52DBC /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F0A8A820423E6200C52DBC /* Validatable.swift */; };
@@ -24,9 +24,9 @@
 		76AA88C72048796F004C51F8 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		76D6F03C2049BEA00004291F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		76D6F03F2049BF050004291F /* ErrorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
-		F456B1CF2042DA3D00086468 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		F456B1D12042DBA600086468 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
-		F4851798204B2B5000811FCE /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
+		F456B1CF2042DA3D00086468 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		F456B1D12042DBA600086468 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		F4851798204B2B5000811FCE /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		F4F0A8882040D0C300C52DBC /* HFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F0A88B2040D0C300C52DBC /* HFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFKit.h; sourceTree = "<group>"; };
 		F4F0A88C2040D0C300C52DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				76D6F03C2049BEA00004291F /* UIViewControllerExtension.swift */,
-				F456B1CF2042DA3D00086468 /* UIColorExtensions.swift */,
-				F456B1D12042DBA600086468 /* UIButtonExtensions.swift */,
-				F4851798204B2B5000811FCE /* UIAlertControllerExtensions.swift */,
+				F456B1CF2042DA3D00086468 /* UIColorExtension.swift */,
+				F456B1D12042DBA600086468 /* UIButtonExtension.swift */,
+				F4851798204B2B5000811FCE /* UIAlertControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,12 +213,12 @@
 				F4F0A8972040D10800C52DBC /* KeyboardHideManager.swift in Sources */,
 				76AA88C82048796F004C51F8 /* EmailValidator.swift in Sources */,
 				F4F0A8AB20423EE700C52DBC /* Validator.swift in Sources */,
-				F4851799204B2B5000811FCE /* UIAlertControllerExtensions.swift in Sources */,
+				F4851799204B2B5000811FCE /* UIAlertControllerExtension.swift in Sources */,
 				F4F0A8B0204247F800C52DBC /* Presenting.swift in Sources */,
 				76D6F03D2049BEA00004291F /* UIViewControllerExtension.swift in Sources */,
-				F456B1D22042DBA600086468 /* UIButtonExtensions.swift in Sources */,
+				F456B1D22042DBA600086468 /* UIButtonExtension.swift in Sources */,
 				F4F0A8A920423E6200C52DBC /* Validatable.swift in Sources */,
-				F456B1D02042DA3D00086468 /* UIColorExtensions.swift in Sources */,
+				F456B1D02042DA3D00086468 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
