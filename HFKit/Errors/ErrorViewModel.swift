@@ -10,27 +10,23 @@ import Foundation
 
 open class ErrorViewModel {
     
-    var title: String
-    var description: String
+    public var title: String
+    public var description: String
     
-    public init(error: NSError) {
+    private(set) public var configuration: Configuration = Configuration.default
+    
+    public init(error: NSError, configuration: Configuration? = nil) {
+        if let configuration = configuration {
+            self.configuration = configuration
+        }
         
         let domain = error.domain
         let errorCode = error.code
         
         var description: String?
         var title: String?
-        
-        let bundles = Bundle.allBundles
-        var bundle = Bundle()
-        for bun in bundles {
-            if let _ = bun.path(forResource: "errors", ofType: "plist") {
-                bundle = bun
-            } else {
-                bundle = Bundle.main
-            }
-        }
-        let errorsPath = bundle.path(forResource: "errors", ofType: "plist") ?? ""
+
+        let errorsPath = self.configuration.filePath ?? ""
         let errorsDictionary = (NSDictionary(contentsOfFile: errorsPath) as? [String: Any]) ?? [:]
         
         if let errors = errorsDictionary[domain] as? [String: Any] {
@@ -45,7 +41,22 @@ open class ErrorViewModel {
         }
         
         self.description = description ??  "The application has encountered an unknown error."
-        
         self.title = title ?? "Oops!"
+        
     }
+    
+    // MARK: -
+    
+    open class Configuration {
+        
+        public var filePath: String?
+        
+        public static var `default`: Configuration = {
+            var configuration = Configuration()
+            configuration.filePath = Bundle.main.path(forResource: "errors", ofType: "plist")
+            return configuration
+        }()
+        
+    }
+    
 }
