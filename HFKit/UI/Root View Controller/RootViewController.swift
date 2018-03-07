@@ -10,7 +10,7 @@ import UIKit
 
 open class RootViewController: UIViewController {
     
-    var delegate: RootViewControllerDelegateProtocol? {
+    public var delegate: RootViewControllerDelegateProtocol? {
         didSet { didSet(delegate: self.delegate) }
     }
     
