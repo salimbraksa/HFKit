@@ -12,6 +12,11 @@
 		76D6F0402049BF050004291F /* ErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D6F03F2049BF050004291F /* ErrorViewModel.swift */; };
 		F456B1D02042DA3D00086468 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1CF2042DA3D00086468 /* UIColorExtension.swift */; };
 		F456B1D22042DBA600086468 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1D12042DBA600086468 /* UIButtonExtension.swift */; };
+		F45E57BB20500B3C0098412C /* UIViewControllerContextTransitioningExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E57BA20500B3C0098412C /* UIViewControllerContextTransitioningExtension.swift */; };
+		F45E57C220500B700098412C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E57BE20500B700098412C /* RootViewController.swift */; };
+		F45E57C320500B700098412C /* ChildViewControllerContextTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E57BF20500B700098412C /* ChildViewControllerContextTransitioning.swift */; };
+		F45E57C420500B700098412C /* ChildViewControllerSlideDownTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E57C020500B700098412C /* ChildViewControllerSlideDownTransition.swift */; };
+		F45E57C520500B700098412C /* ChildViewControllerSlideUpTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E57C120500B700098412C /* ChildViewControllerSlideUpTransition.swift */; };
 		F4851799204B2B5000811FCE /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4851798204B2B5000811FCE /* UIAlertControllerExtension.swift */; };
 		F4F0A88D2040D0C300C52DBC /* HFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F0A88B2040D0C300C52DBC /* HFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4F0A8972040D10800C52DBC /* KeyboardHideManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F0A8962040D10800C52DBC /* KeyboardHideManager.swift */; };
@@ -26,6 +31,11 @@
 		76D6F03F2049BF050004291F /* ErrorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
 		F456B1CF2042DA3D00086468 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		F456B1D12042DBA600086468 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		F45E57BA20500B3C0098412C /* UIViewControllerContextTransitioningExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerContextTransitioningExtension.swift; sourceTree = "<group>"; };
+		F45E57BE20500B700098412C /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F45E57BF20500B700098412C /* ChildViewControllerContextTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewControllerContextTransitioning.swift; sourceTree = "<group>"; };
+		F45E57C020500B700098412C /* ChildViewControllerSlideDownTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewControllerSlideDownTransition.swift; sourceTree = "<group>"; };
+		F45E57C120500B700098412C /* ChildViewControllerSlideUpTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewControllerSlideUpTransition.swift; sourceTree = "<group>"; };
 		F4851798204B2B5000811FCE /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		F4F0A8882040D0C300C52DBC /* HFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F0A88B2040D0C300C52DBC /* HFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFKit.h; sourceTree = "<group>"; };
@@ -55,6 +65,25 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
+		F45E57BC20500B470098412C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F45E57BD20500B700098412C /* Root View Controller */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F45E57BD20500B700098412C /* Root View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F45E57BE20500B700098412C /* RootViewController.swift */,
+				F45E57BF20500B700098412C /* ChildViewControllerContextTransitioning.swift */,
+				F45E57C020500B700098412C /* ChildViewControllerSlideDownTransition.swift */,
+				F45E57C120500B700098412C /* ChildViewControllerSlideUpTransition.swift */,
+			);
+			path = "Root View Controller";
+			sourceTree = "<group>";
+		};
 		F4F0A87E2040D0C300C52DBC = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +103,7 @@
 		F4F0A88A2040D0C300C52DBC /* HFKit */ = {
 			isa = PBXGroup;
 			children = (
+				F45E57BC20500B470098412C /* UI */,
 				76D6F03E2049BEE80004291F /* Errors */,
 				F4F0A8AE204247E200C52DBC /* Architecture */,
 				F4F0A8A520423D4600C52DBC /* Validation */,
@@ -96,6 +126,7 @@
 		F4F0A8942040D0D200C52DBC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F45E57BA20500B3C0098412C /* UIViewControllerContextTransitioningExtension.swift */,
 				76D6F03C2049BEA00004291F /* UIViewControllerExtension.swift */,
 				F456B1CF2042DA3D00086468 /* UIColorExtension.swift */,
 				F456B1D12042DBA600086468 /* UIButtonExtension.swift */,
@@ -211,6 +242,10 @@
 			files = (
 				76D6F0402049BF050004291F /* ErrorViewModel.swift in Sources */,
 				F4F0A8972040D10800C52DBC /* KeyboardHideManager.swift in Sources */,
+				F45E57C220500B700098412C /* RootViewController.swift in Sources */,
+				F45E57C320500B700098412C /* ChildViewControllerContextTransitioning.swift in Sources */,
+				F45E57BB20500B3C0098412C /* UIViewControllerContextTransitioningExtension.swift in Sources */,
+				F45E57C520500B700098412C /* ChildViewControllerSlideUpTransition.swift in Sources */,
 				76AA88C82048796F004C51F8 /* EmailValidator.swift in Sources */,
 				F4F0A8AB20423EE700C52DBC /* Validator.swift in Sources */,
 				F4851799204B2B5000811FCE /* UIAlertControllerExtension.swift in Sources */,
@@ -218,6 +253,7 @@
 				76D6F03D2049BEA00004291F /* UIViewControllerExtension.swift in Sources */,
 				F456B1D22042DBA600086468 /* UIButtonExtension.swift in Sources */,
 				F4F0A8A920423E6200C52DBC /* Validatable.swift in Sources */,
+				F45E57C420500B700098412C /* ChildViewControllerSlideDownTransition.swift in Sources */,
 				F456B1D02042DA3D00086468 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
