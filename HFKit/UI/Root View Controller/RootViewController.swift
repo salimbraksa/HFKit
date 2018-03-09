@@ -16,13 +16,13 @@ open class RootViewController: UIViewController {
     
     // MARK: Private
     
-    private var lookupStrategory: ViewControllerLookUpStrategy?
+    private var lookupStrategy: ViewControllerLookUpStrategy?
     
     // MARK: - Initializers
     
     convenience public init(initialViewControllerLookUpStrategy strategy: ViewControllerLookUpStrategy) {
         self.init()
-        self.lookupStrategory = strategy
+        self.lookupStrategy = strategy
         switch strategy {
         case .manual(let controller): set(childViewController: controller)
         default: break
@@ -97,7 +97,7 @@ open class RootViewController: UIViewController {
     
     private func didSet(delegate: RootViewControllerDelegateProtocol?) {
         
-        guard let strategy = self.lookupStrategory else { return }
+        guard let strategy = self.lookupStrategy else { return }
         
         switch strategy {
         case .automatic:
