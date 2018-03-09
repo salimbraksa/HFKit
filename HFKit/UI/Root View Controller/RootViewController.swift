@@ -80,6 +80,7 @@ open class RootViewController: UIViewController {
     public func dismiss(childViewController: UIViewController) {
         let transition = ChildViewControllerSlideDownTransition()
         set(childViewController: childViewController, transition: transition)
+        childViewControllers.last?.presentedViewController?.dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Helpers
