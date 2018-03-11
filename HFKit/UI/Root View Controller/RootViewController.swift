@@ -17,6 +17,9 @@ open class RootViewController: UIViewController {
     // MARK: Private
     
     private var lookupStrategy: ViewControllerLookUpStrategy?
+    private var currentChildViewController: UIViewController? {
+        return childViewControllers.last
+    }
     
     // MARK: - Initializers
     
@@ -78,9 +81,9 @@ open class RootViewController: UIViewController {
     }
     
     public func dismiss(childViewController: UIViewController) {
+        currentChildViewController?.presentedViewController?.dismiss(animated: true)
         let transition = ChildViewControllerSlideDownTransition()
         set(childViewController: childViewController, transition: transition)
-        childViewControllers.last?.presentedViewController?.dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Helpers
