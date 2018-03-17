@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIViewControllerContextTransitioning {
+public extension UIViewControllerContextTransitioning {
     
     var destinationViewController: UIViewController {
         return viewController(forKey: .to)!
