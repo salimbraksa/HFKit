@@ -10,6 +10,7 @@
 		76AA88C82048796F004C51F8 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA88C72048796F004C51F8 /* EmailValidator.swift */; };
 		76D6F03D2049BEA00004291F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D6F03C2049BEA00004291F /* UIViewControllerExtension.swift */; };
 		76D6F0402049BF050004291F /* ErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D6F03F2049BF050004291F /* ErrorViewModel.swift */; };
+		F412BAB1205D6F4A0089E585 /* StatusBarStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412BAB0205D6F4A0089E585 /* StatusBarStyleProvider.swift */; };
 		F456B1D02042DA3D00086468 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1CF2042DA3D00086468 /* UIColorExtension.swift */; };
 		F456B1D22042DBA600086468 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1D12042DBA600086468 /* UIButtonExtension.swift */; };
 		F45E57BB20500B3C0098412C /* UIViewControllerContextTransitioningExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E57BA20500B3C0098412C /* UIViewControllerContextTransitioningExtension.swift */; };
@@ -29,6 +30,7 @@
 		76AA88C72048796F004C51F8 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		76D6F03C2049BEA00004291F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		76D6F03F2049BF050004291F /* ErrorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
+		F412BAB0205D6F4A0089E585 /* StatusBarStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarStyleProvider.swift; sourceTree = "<group>"; };
 		F456B1CF2042DA3D00086468 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		F456B1D12042DBA600086468 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		F45E57BA20500B3C0098412C /* UIViewControllerContextTransitioningExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerContextTransitioningExtension.swift; sourceTree = "<group>"; };
@@ -65,9 +67,18 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
+		F412BAAF205D6F390089E585 /* Status Bar Style */ = {
+			isa = PBXGroup;
+			children = (
+				F412BAB0205D6F4A0089E585 /* StatusBarStyleProvider.swift */,
+			);
+			path = "Status Bar Style";
+			sourceTree = "<group>";
+		};
 		F45E57BC20500B470098412C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F412BAAF205D6F390089E585 /* Status Bar Style */,
 				F45E57BD20500B700098412C /* Root View Controller */,
 			);
 			path = UI;
@@ -252,6 +263,7 @@
 				F4F0A8B0204247F800C52DBC /* Presenting.swift in Sources */,
 				76D6F03D2049BEA00004291F /* UIViewControllerExtension.swift in Sources */,
 				F456B1D22042DBA600086468 /* UIButtonExtension.swift in Sources */,
+				F412BAB1205D6F4A0089E585 /* StatusBarStyleProvider.swift in Sources */,
 				F4F0A8A920423E6200C52DBC /* Validatable.swift in Sources */,
 				F45E57C420500B700098412C /* ChildViewControllerSlideDownTransition.swift in Sources */,
 				F456B1D02042DA3D00086468 /* UIColorExtension.swift in Sources */,
