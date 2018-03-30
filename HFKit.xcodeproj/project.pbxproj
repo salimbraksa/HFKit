@@ -13,6 +13,7 @@
 		F412BAB1205D6F4A0089E585 /* StatusBarStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412BAB0205D6F4A0089E585 /* StatusBarStyleProvider.swift */; };
 		F456B1D02042DA3D00086468 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1CF2042DA3D00086468 /* UIColorExtension.swift */; };
 		F456B1D22042DBA600086468 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456B1D12042DBA600086468 /* UIButtonExtension.swift */; };
+		F4594F11206E406600B189C0 /* SegmentedControlBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4594F10206E406600B189C0 /* SegmentedControlBehavior.swift */; };
 		F45E57BB20500B3C0098412C /* UIViewControllerContextTransitioningExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E57BA20500B3C0098412C /* UIViewControllerContextTransitioningExtension.swift */; };
 		F45E57C220500B700098412C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E57BE20500B700098412C /* RootViewController.swift */; };
 		F45E57C320500B700098412C /* ChildViewControllerContextTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E57BF20500B700098412C /* ChildViewControllerContextTransitioning.swift */; };
@@ -33,6 +34,7 @@
 		F412BAB0205D6F4A0089E585 /* StatusBarStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarStyleProvider.swift; sourceTree = "<group>"; };
 		F456B1CF2042DA3D00086468 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		F456B1D12042DBA600086468 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		F4594F10206E406600B189C0 /* SegmentedControlBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlBehavior.swift; sourceTree = "<group>"; };
 		F45E57BA20500B3C0098412C /* UIViewControllerContextTransitioningExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerContextTransitioningExtension.swift; sourceTree = "<group>"; };
 		F45E57BE20500B700098412C /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F45E57BF20500B700098412C /* ChildViewControllerContextTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewControllerContextTransitioning.swift; sourceTree = "<group>"; };
@@ -75,9 +77,18 @@
 			path = "Status Bar Style";
 			sourceTree = "<group>";
 		};
+		F4594F0F206E405000B189C0 /* Segmented Control Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				F4594F10206E406600B189C0 /* SegmentedControlBehavior.swift */,
+			);
+			path = "Segmented Control Behavior";
+			sourceTree = "<group>";
+		};
 		F45E57BC20500B470098412C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F4594F0F206E405000B189C0 /* Segmented Control Behavior */,
 				F412BAAF205D6F390089E585 /* Status Bar Style */,
 				F45E57BD20500B700098412C /* Root View Controller */,
 			);
@@ -259,6 +270,7 @@
 				F45E57C520500B700098412C /* ChildViewControllerSlideUpTransition.swift in Sources */,
 				76AA88C82048796F004C51F8 /* EmailValidator.swift in Sources */,
 				F4F0A8AB20423EE700C52DBC /* Validator.swift in Sources */,
+				F4594F11206E406600B189C0 /* SegmentedControlBehavior.swift in Sources */,
 				F4851799204B2B5000811FCE /* UIAlertControllerExtension.swift in Sources */,
 				F4F0A8B0204247F800C52DBC /* Presenting.swift in Sources */,
 				76D6F03D2049BEA00004291F /* UIViewControllerExtension.swift in Sources */,
