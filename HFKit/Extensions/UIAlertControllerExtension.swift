@@ -12,7 +12,11 @@ extension UIAlertController {
     
     convenience init(error: NSError, preferredStyle style: UIAlertControllerStyle = .alert) {
         let viewModel = ErrorViewModel(error: error)
-        self.init(title: viewModel.title, message: viewModel.description, preferredStyle: style)
+        self.init(error: error, preferredStyle: style)
+    }
+    
+    convenience init(error: ErrorViewModel, preferredStyle style: UIAlertControllerStyle = .alert) {
+        self.init(title: error.title, message: error.description, preferredStyle: style)
         let close = UIAlertAction(title: "Close", style: .cancel, handler: nil)
         addAction(close)
     }

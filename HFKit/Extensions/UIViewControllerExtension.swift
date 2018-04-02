@@ -21,4 +21,9 @@ public extension UIViewController {
         show(error: error as NSError)
     }
     
+    public func show(error: ErrorViewModel) {
+        let alertController = UIAlertController(error: error)
+        present(alertController, animated: true, completion: nil)
+    }
+    
 }

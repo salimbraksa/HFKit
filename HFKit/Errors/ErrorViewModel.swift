@@ -45,6 +45,11 @@ open class ErrorViewModel {
         
     }
     
+    public init(title: String, description: String) {
+        self.title = title
+        self.description = description
+    }
+    
     // MARK: -
     
     open class Configuration {
