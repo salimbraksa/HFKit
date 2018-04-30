@@ -20,6 +20,7 @@
 		F45E57C420500B700098412C /* ChildViewControllerSlideDownTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E57C020500B700098412C /* ChildViewControllerSlideDownTransition.swift */; };
 		F45E57C520500B700098412C /* ChildViewControllerSlideUpTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E57C120500B700098412C /* ChildViewControllerSlideUpTransition.swift */; };
 		F4851799204B2B5000811FCE /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4851798204B2B5000811FCE /* UIAlertControllerExtension.swift */; };
+		F4EE88BD20973A0300A23530 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EE88BC20973A0300A23530 /* NotificationManager.swift */; };
 		F4F0A88D2040D0C300C52DBC /* HFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F0A88B2040D0C300C52DBC /* HFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4F0A8972040D10800C52DBC /* KeyboardHideManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F0A8962040D10800C52DBC /* KeyboardHideManager.swift */; };
 		F4F0A8A920423E6200C52DBC /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F0A8A820423E6200C52DBC /* Validatable.swift */; };
@@ -41,6 +42,7 @@
 		F45E57C020500B700098412C /* ChildViewControllerSlideDownTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewControllerSlideDownTransition.swift; sourceTree = "<group>"; };
 		F45E57C120500B700098412C /* ChildViewControllerSlideUpTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewControllerSlideUpTransition.swift; sourceTree = "<group>"; };
 		F4851798204B2B5000811FCE /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		F4EE88BC20973A0300A23530 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		F4F0A8882040D0C300C52DBC /* HFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F0A88B2040D0C300C52DBC /* HFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFKit.h; sourceTree = "<group>"; };
 		F4F0A88C2040D0C300C52DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			path = "Root View Controller";
 			sourceTree = "<group>";
 		};
+		F4EE88BB209739EE00A23530 /* NotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				F4EE88BC20973A0300A23530 /* NotificationManager.swift */,
+			);
+			path = NotificationManager;
+			sourceTree = "<group>";
+		};
 		F4F0A87E2040D0C300C52DBC = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		F4F0A8932040D0CC00C52DBC /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				F4EE88BB209739EE00A23530 /* NotificationManager */,
 				F4F0A8952040D10000C52DBC /* KeyboardHideManager */,
 			);
 			path = Libraries;
@@ -274,6 +285,7 @@
 				F4851799204B2B5000811FCE /* UIAlertControllerExtension.swift in Sources */,
 				F4F0A8B0204247F800C52DBC /* Presenting.swift in Sources */,
 				76D6F03D2049BEA00004291F /* UIViewControllerExtension.swift in Sources */,
+				F4EE88BD20973A0300A23530 /* NotificationManager.swift in Sources */,
 				F456B1D22042DBA600086468 /* UIButtonExtension.swift in Sources */,
 				F412BAB1205D6F4A0089E585 /* StatusBarStyleProvider.swift in Sources */,
 				F4F0A8A920423E6200C52DBC /* Validatable.swift in Sources */,
