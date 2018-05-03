@@ -30,6 +30,10 @@ open class NotificationManager {
         center.addObserver(observer, selector: selector, name: name, object: nil)
     }
     
+    public func remove(observer: Any) {
+        center.removeObserver(observer, name: name, object: nil)
+    }
+    
 }
 
 public extension Notification {
